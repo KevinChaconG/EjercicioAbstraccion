@@ -4,26 +4,32 @@ namespace EjercicioAbstraccion
 {
     public class Operaciones : Matematicas
     {
-        public double seno;
+        public double catetoOpuesto;
+        public double catetoContinuo;
+        public double hipotenusa;
 
         public override double Coseno()
         {
-            throw new NotImplementedException();
-        }
-
-        public override void Imprimir()
-        {
-            throw new NotImplementedException();
+            return catetoContinuo / hipotenusa;
         }
 
         public override double Seno()
         {
-            throw new NotImplementedException();
+            return catetoOpuesto / hipotenusa;
         }
 
         public override double Tangente()
         {
-            throw new NotImplementedException();
+            return catetoOpuesto / catetoContinuo;
+        }
+
+        public override void Imprimir()
+        {
+            Console.WriteLine("---Resultados---");
+            Console.WriteLine($"Seno: {Seno()}");
+            Console.WriteLine($"Coseno: {Coseno()}");
+            Console.WriteLine($"Tangente: {Tangente()}");
+            Console.WriteLine();
         }
     }
 }
