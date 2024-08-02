@@ -17,6 +17,7 @@ if (validcatetoContinuo  && validcatetoOpuesto && validhipotenusa)
 } else
 {
     Console.WriteLine("Los valores ingresados son incorrectos");
+    Console.WriteLine();
 }
 
 Console.ReadLine();
